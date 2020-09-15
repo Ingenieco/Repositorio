@@ -1,0 +1,33 @@
+# Bucles o loops
+
+for (( n = 0; n < 5; n++ ))
+do
+    echo "Ejecutando $n"
+done
+
+# [] == [[]]
+# () != (()): son diferentes, el doble paréntesis ejecuta en otro subshell
+
+# Blucle while que se ejecuta mientras m sea menor que m
+
+m=0
+while [ $m -lt 5 ]
+do
+    echo "codigo $m"
+    ((m++))
+done
+
+# Hacer un programa que lea el nombre de la persona y le responda con un mucho gusto XXXX
+echo "¿Cómo te llamas"
+read NAME
+echo "Hola mucho gusto, $NAME"
+
+
+INITIAL_MSG="Hola"
+read -p "Ingresa tu nombre por favor:" NAME
+if [ $NAME -eq "ERNESTO" ]
+then
+    echo "Bienvenido $NAME"
+else
+    echo "Lo siento $NAME, no estás autorizado"
+fi

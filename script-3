@@ -1,0 +1,44 @@
+#!/usr/bin/env node
+
+// Comentarios
+console.log("Hola mundo")
+
+/* Palabras reservadas
+
+var nombre = ''
+var numero = 1
+
+let nombre = ''
+let numero = 1
+
+var
+let : se puede usar exactamente igual que var
+const : no permite reasignar la variable, mas no cambiarla, lo cual es diferente
+
+var y const son diferentes
+--------------------
+if (condición){
+    cuerpo de la función
+}
+
+*/
+
+// USO DEL IF
+
+if (true) { 
+    console.log('cuerpo if')
+} else if (true) {
+    console.log('Cuerpo else if')
+} else if (true) {
+    console.log('Cuerpo else if')
+}
+
+
+// USO DEL FOR
+
+for (var n = 0; n < 5; n++) {
+    console.log('Conteo' + n)
+}
+
+
+

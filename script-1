@@ -1,0 +1,50 @@
+#Shell script 
+
+# Los espacios despues del '=' generan problemas, igual como los paréntesis cuadrados
+MY_VAR="Hola"
+MY_VAR2="Mundo"
+
+echo $MY_VAR $MY_VAR2
+expr 1 + 3 # sirve para evaluar expresiones 
+
+echo "cómo te llamas"
+read NAME
+echo "Hola, $NAME"
+
+ls > file.txt
+
+# Estructuras de control
+
+#if / else
+    #<> == != &&
+    #-gt => greater than
+    #-lt => lesser than
+    #-eq => 
+
+
+#if cond then;
+# true
+#elseif cond2
+#then 
+#else
+#fi
+
+# Ejemplo
+
+VALUE=50
+VALUE2=100
+
+if [ $VALUE -gt $VALUE2 ]; then 
+    echo "Esto es verdadero"
+elif [ $VALUE -eq $VALUE2 ]; then
+    echo "Esto es un else if 1"
+elif [ $VALUE -le $VALUE2 ]; then
+    echo "Esto es un else if 2"
+else
+    echo "No hay Opción"
+fi
+
+# 0 => exitoso o true
+# 1 => falla o es false
+
+
